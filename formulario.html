@@ -89,13 +89,37 @@
 
         <input type="password"
         size="24"
-        minlength="8"
-        maxlength="16"
-        title="Preencha o dado"
-        required>
+        title="Sua senha precisa ser em Hexadecimal"
+        pattern="[0-9a-fA-F]{4,8}"
+        required
+        inputmode="numeric"
+        >
+
+
+        <!--Input hidder-->
+        
+        
+        <input type="color">
+
+
+
+
+
+        
         <br>
 
         <button type="submit">Enviar</button>
+
+
+
+        
+
+
+
+
+
+
+
 
     </fieldset>
 
