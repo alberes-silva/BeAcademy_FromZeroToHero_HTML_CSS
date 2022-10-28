@@ -4,12 +4,12 @@
         * method (GET - Padrão)
 -->
 
-<form action="from-teste" method="post">
+<form action="" method="post">
 
-    <fieldset name="contato" form="form-teste">
+    <!-- <fieldset name="contato" form="form-teste">
         <legend>Preencha o Formulário de contato</legend>
 
-    </fieldset>
+    </fieldset> -->
 
     <!-- Button
     <button type="button" name="" class="">Enviar</button> -->
@@ -42,16 +42,64 @@
                 colocar novos valores
         -->
 
-        <datalist id="prof-list">
+        <!-- <datalist id="prof-list">
             <option >Luan</option>
             <option >Jenifer</option>
             <option >Regis</option>
 
         </datalist>
 
-        <input type="text" list="prof-list" placeholder="Escolha o seu professor">
+        <input type="text" list="prof-list" placeholder="Escolha o seu professor"> -->
 
-        
+    <fieldset>
+        <legend>Trabalhando com Input</legend>
+
+        <!--Input text-->
+
+        <input type="text"
+        placeholder="Preencha o seu nome"
+        size="60"
+        minlength="8"
+        maxlength="20"
+        title="Preencha o dado"
+        required>
+
+        <!--Input Number-->
+
+        <input type="number"
+        size="50"
+        minlength="12"
+        maxlength="20"
+        title="Preencha o dado"
+        >
+
+        <br>
+
+
+        <!--Input email-->
+
+        <input type="email"
+        size="24"
+        title="Preencha o dado"
+        required>
+
+        <br>
+
+        <!--Input password-->
+
+        <input type="password"
+        size="24"
+        minlength="8"
+        maxlength="16"
+        title="Preencha o dado"
+        required>
+        <br>
+
+        <button type="submit">Enviar</button>
+
+    </fieldset>
+
+   
 
 
 </form>
