@@ -32,6 +32,51 @@
         seguido do identificador e do valor
 
         São as seguintes:
+        @import serve para incluir um CSS externo
+
+        @import utl("http://linkexterno.com.br/style.css")
+
+        @media são regras condicionais para vários dispositivos.
+
+        @media (min-width: 365px){
+
+        }
+
+        @font-face é para colocar fontes externas.
+
+        @font-face{
+
+        }
+
+        @keyframes serve para as animations do CSS.
+        
+        @keyframes animationame {
+
+        }
+
+        ** COMBINADORES (COMBINATORS) **
+
+        Combinadores são utilizados para buscar e combinar seletores a fim de aplicar uma estilização
+
+        Tipos:
+
+        ** Descendent combinator **
+
+        Identificado por um espaço entre os seletores.
+        - busca um elemento dentro de outro
+
+        body ul li
+
+        **Child combinator**
+
+        Identificado pelo sinal > entre dois seletores
+        - Seleciona somente o elemento filho direto do pai
+        - Elementos depois do filho direto serão desconsiderados
+
+        ** Adjacent sibling combinator **
+
+        Identificado pelo sinal de + ~ entre dois seletores
+        - Busca somente o elemento do lado direito que é irmão direto da hierarquia
 
 -->
 <!DOCTYPE html>
@@ -42,9 +87,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./assets/style.css">
-
     <style>
+        /* body ul li{
+            background:green;
+            color: red;
+        }
+
+        body section div ul li {
+            background: blue;
+            color: yellow;
+        } */
+
+        /* body > ul {
+            background: red;
+        }
+
+        div > ul {
+            background: blue;
+        } */
+
+        /* h1 + p {
+            color:green;
+        } */
+
+        h1 ~ p {
+            color:green;
+        }
+
+
+    </style>
+
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+
+    <!-- <style>
         h1{
             background:blue;
         }
@@ -53,7 +128,22 @@
             background:red;
         }
 
-    </style>
+        h1{
+            background:green;
+        }
+        .my-title-2{
+            background:yellow;
+        }
+
+        strong{
+            color:blueviolet;
+        }
+
+        .my-text strong{
+            color:aqua;
+        }
+
+    </style> -->
 
 </head>
 <body>
@@ -62,15 +152,41 @@
         <h1 style="background:red">Eu sou um título</h1>
     </div>> -->
 
-    <h1 id="super-title">Testando Especificidade</h1>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam velit explicabo facilis omnis earum, ut quo non voluptate tenetur nobis illo, sapiente maiores nam sint voluptatum ullam eligendi sed ipsum?
+    <!-- <h1 id="super-title">Testando Especificidade</h1>
+    <p class="my-text">
+        Lorem ipsum dolor sit, amet consectetur <strong>adipisicing elit.</strong> Laboriosam velit explicabo facilis omnis earum, ut quo non voluptate tenetur nobis illo, sapiente maiores nam sint voluptatum ullam eligendi sed ipsum?
     </p>
 
     <h1 class="my-title-2">Testando Especificidade</h1>
     <p class="my-text-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum quaerat accusantium fugit alias illum! Quo architecto dolorem aliquam saepe incidunt consectetur necessitatibus fugit quibusdam. Laborum voluptates ex ipsa veritatis.
-    </p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum quaerat accusantium fugit alias <strong>illum! Quo</strong> architecto dolorem aliquam saepe incidunt consectetur necessitatibus fugit quibusdam. Laborum voluptates ex ipsa veritatis.
+    </p> -->
+
+
+    <!-- <div>
+        <p>Teste</p>
+    </div>
+    <ul>
+        <li>Testando combinadores</li>
+    </ul>
+    <div>Outro formato</div>
+    <section>
+        <div>
+            <ul>
+                <li>Outro marcador</li>
+            </ul>
+        </div>
+    </section> -->
+
+    <h1>Título</h1>
+    <p>mais um paragrafo</p>
+
+    <button>Enviar</button>
+
+    <p>Outro paragrafo</p>
+    <p>Outro paragrafo</p>
+    <p>Outro paragrafo</p>
+    <p>Outro paragrafo</p>
     
 </body>
 </html>
