@@ -17,7 +17,47 @@ ul p:first-child {
 color: blue;
 } */
 
-ul li:nth-child(even){
+/* ul li:nth-child(even){
     background: red;
     color: white;
+} */
+
+.btn-submit {
+    padding: 12px;
+    color: white;
+    background: rgb(0,111,215);
+    border: pointer;
+    border-radius: 4px;
+    transition: background .2s;
+}
+
+.btn-submit:hover {
+    background: rgb(2,99,190);
+}
+
+.btn-submit:focus {
+    background: red;
+}
+
+input[type=text] {
+    /* background: red; */
+    border: 1px solid #f2f2f2;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    outline: none;
+    transition: .2s;
+}
+
+input[type=text]:hover {
+    border: 1px solid rgb(0,111,215);
+
+}
+
+input[type=text]:disabled {
+    background:rgba(0,111,215,0.563)
+}
+
+input[type=text]:disabled::placeholder {
+    color:white;
 }
