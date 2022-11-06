@@ -22,7 +22,7 @@ color: blue;
     color: white;
 } */
 
-.btn-submit {
+/* .btn-submit {
     padding: 12px;
     color: white;
     background: rgb(0,111,215);
@@ -60,4 +60,36 @@ input[type=text]:disabled {
 
 input[type=text]:disabled::placeholder {
     color:white;
+} */
+
+ul {
+    position: relative;
+}
+
+ul li::after {
+    /* content: ' Onde eu estou';
+    color: red;
+    font-size: 24px; */
+    content:'';
+    background-color: red;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 140px;
+}
+
+ul li::before {
+    content:'';
+    background-color: blue;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    /* right: 0px; */
+    left: opx;
+}
+
+p::first-line {
+    color: red;
 }
